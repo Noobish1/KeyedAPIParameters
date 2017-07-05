@@ -7,9 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D83B74F1B419FAEAAC577F /* libPods-KeyedAPIParameters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966464BFBB827BC22659222A /* libPods-KeyedAPIParameters.a */; };
+		423D5B737E38DFD3FC30644B /* Pods_KeyedAPIParametersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422D0A32EE9ADD044501C655 /* Pods_KeyedAPIParametersTests.framework */; };
+		751CE9B71EE220DC00CA8327 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751CE9B61EE220DC00CA8327 /* DateSpec.swift */; };
+		755361EF1EE71E5F00050FB5 /* DictionarySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */; };
+		755361F11EE71EC700050FB5 /* APIParamConvertibleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */; };
+		75CC0BF51EFD5B9B00355C66 /* NSNumberParamConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */; };
 		75D12B6B1ED73B31002ED39C /* KeyedAPIParameters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D12B611ED73B31002ED39C /* KeyedAPIParameters.framework */; };
-		75D12B701ED73B31002ED39C /* KeyedAPIParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12B6F1ED73B31002ED39C /* KeyedAPIParametersTests.swift */; };
 		75D12B721ED73B31002ED39C /* KeyedAPIParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75D12B8A1ED73FA5002ED39C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B7E1ED73FA5002ED39C /* .swiftlint.yml */; };
+		75D12B8B1ED73FA5002ED39C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B7F1ED73FA5002ED39C /* .travis.yml */; };
+		75D12B8C1ED73FA5002ED39C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B801ED73FA5002ED39C /* .gitignore */; };
+		75D12B8D1ED73FA5002ED39C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B811ED73FA5002ED39C /* LICENSE */; };
+		75D12B8E1ED73FA5002ED39C /* .codebeatignore in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B821ED73FA5002ED39C /* .codebeatignore */; };
+		75D12B8F1ED73FA5002ED39C /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B831ED73FA5002ED39C /* .swift-version */; };
+		75D12B901ED73FA5002ED39C /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B841ED73FA5002ED39C /* codecov.yml */; };
+		75D12B911ED73FA5002ED39C /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B851ED73FA5002ED39C /* Gemfile */; };
+		75D12B921ED73FA5002ED39C /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B861ED73FA5002ED39C /* Gemfile.lock */; };
+		75D12B931ED73FA5002ED39C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B871ED73FA5002ED39C /* Podfile */; };
+		75D12B941ED73FA5002ED39C /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B881ED73FA5002ED39C /* Podfile.lock */; };
+		75D12B971ED745BB002ED39C /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12B961ED745BB002ED39C /* Dictionary.swift */; };
+		75D12B991ED745DD002ED39C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12B981ED745DD002ED39C /* Date.swift */; };
+		75D12BA31ED749C1002ED39C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BA21ED749C1002ED39C /* HTTPMethod.swift */; };
+		75D12BA61ED749ED002ED39C /* APIParamConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BA51ED749ED002ED39C /* APIParamConvertible.swift */; };
+		75D12BA81ED74C9B002ED39C /* APIParamValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BA71ED74C9B002ED39C /* APIParamValue.swift */; };
+		75D12BAA1ED74CBD002ED39C /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BA91ED74CBD002ED39C /* APIParameters.swift */; };
+		75D12BAC1ED74CE1002ED39C /* ParamJSONKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BAB1ED74CE1002ED39C /* ParamJSONKey.swift */; };
+		75D12BAE1ED74D24002ED39C /* KeyedAPIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D12BAD1ED74D24002ED39C /* KeyedAPIParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +47,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23058028205E5F99B012312D /* Pods-KeyedAPIParametersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParametersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParametersTests/Pods-KeyedAPIParametersTests.release.xcconfig"; sourceTree = "<group>"; };
+		422D0A32EE9ADD044501C655 /* Pods_KeyedAPIParametersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyedAPIParametersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C817B86FF103C6B99261FA /* Pods-KeyedAPIParameters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParameters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParameters/Pods-KeyedAPIParameters.debug.xcconfig"; sourceTree = "<group>"; };
+		751CE9B61EE220DC00CA8327 /* DateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = Extensions/DateSpec.swift; sourceTree = "<group>"; };
+		755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionarySpec.swift; path = Extensions/DictionarySpec.swift; sourceTree = "<group>"; };
+		755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParamConvertibleSpec.swift; path = Protocols/APIParamConvertibleSpec.swift; sourceTree = "<group>"; };
+		75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberParamConvertible.swift; sourceTree = "<group>"; };
 		75D12B611ED73B31002ED39C /* KeyedAPIParameters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyedAPIParameters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyedAPIParameters.h; sourceTree = "<group>"; };
 		75D12B651ED73B31002ED39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D12B6A1ED73B31002ED39C /* KeyedAPIParametersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyedAPIParametersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75D12B6F1ED73B31002ED39C /* KeyedAPIParametersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedAPIParametersTests.swift; sourceTree = "<group>"; };
 		75D12B711ED73B31002ED39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D12B7D1ED73FA5002ED39C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75D12B7E1ED73FA5002ED39C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		75D12B7F1ED73FA5002ED39C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		75D12B801ED73FA5002ED39C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		75D12B811ED73FA5002ED39C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		75D12B821ED73FA5002ED39C /* .codebeatignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
+		75D12B831ED73FA5002ED39C /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		75D12B841ED73FA5002ED39C /* codecov.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
+		75D12B851ED73FA5002ED39C /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		75D12B861ED73FA5002ED39C /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		75D12B871ED73FA5002ED39C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75D12B881ED73FA5002ED39C /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		75D12B961ED745BB002ED39C /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		75D12B981ED745DD002ED39C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		75D12BA21ED749C1002ED39C /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		75D12BA51ED749ED002ED39C /* APIParamConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParamConvertible.swift; sourceTree = "<group>"; };
+		75D12BA71ED74C9B002ED39C /* APIParamValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParamValue.swift; sourceTree = "<group>"; };
+		75D12BA91ED74CBD002ED39C /* APIParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
+		75D12BAB1ED74CE1002ED39C /* ParamJSONKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamJSONKey.swift; sourceTree = "<group>"; };
+		75D12BAD1ED74D24002ED39C /* KeyedAPIParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedAPIParameters.swift; sourceTree = "<group>"; };
+		966464BFBB827BC22659222A /* libPods-KeyedAPIParameters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KeyedAPIParameters.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A555FE5BC21B5CDBC915317E /* Pods-KeyedAPIParameters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParameters.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParameters/Pods-KeyedAPIParameters.release.xcconfig"; sourceTree = "<group>"; };
+		EA80ADD903ECDBD2EDCB2438 /* Pods-KeyedAPIParametersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParametersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParametersTests/Pods-KeyedAPIParametersTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D83B74F1B419FAEAAC577F /* libPods-KeyedAPIParameters.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +98,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D12B6B1ED73B31002ED39C /* KeyedAPIParameters.framework in Frameworks */,
+				423D5B737E38DFD3FC30644B /* Pods_KeyedAPIParametersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33DF6218C18EC116EF92A96D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64C817B86FF103C6B99261FA /* Pods-KeyedAPIParameters.debug.xcconfig */,
+				A555FE5BC21B5CDBC915317E /* Pods-KeyedAPIParameters.release.xcconfig */,
+				EA80ADD903ECDBD2EDCB2438 /* Pods-KeyedAPIParametersTests.debug.xcconfig */,
+				23058028205E5F99B012312D /* Pods-KeyedAPIParametersTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		751CE9B21EE1BE4800CA8327 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D12B711ED73B31002ED39C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		751CE9B31EE1BEF000CA8327 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				751CE9B61EE220DC00CA8327 /* DateSpec.swift */,
+				755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		751CE9B41EE1BEF500CA8327 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		751CE9B51EE1BEFE00CA8327 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		75D12B571ED73B31002ED39C = {
 			isa = PBXGroup;
 			children = (
+				DD81D3A004E48C85B294EFC2 /* Frameworks */,
 				75D12B631ED73B31002ED39C /* KeyedAPIParameters */,
 				75D12B6E1ED73B31002ED39C /* KeyedAPIParametersTests */,
+				33DF6218C18EC116EF92A96D /* Pods */,
 				75D12B621ED73B31002ED39C /* Products */,
+				75D12B821ED73FA5002ED39C /* .codebeatignore */,
+				75D12B801ED73FA5002ED39C /* .gitignore */,
+				75D12B831ED73FA5002ED39C /* .swift-version */,
+				75D12B7E1ED73FA5002ED39C /* .swiftlint.yml */,
+				75D12B7F1ED73FA5002ED39C /* .travis.yml */,
+				75D12B851ED73FA5002ED39C /* Gemfile */,
+				75D12B861ED73FA5002ED39C /* Gemfile.lock */,
+				75D12B811ED73FA5002ED39C /* LICENSE */,
+				75D12B871ED73FA5002ED39C /* Podfile */,
+				75D12B881ED73FA5002ED39C /* Podfile.lock */,
+				75D12B7D1ED73FA5002ED39C /* README.md */,
+				75D12B841ED73FA5002ED39C /* codecov.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +183,10 @@
 		75D12B631ED73B31002ED39C /* KeyedAPIParameters */ = {
 			isa = PBXGroup;
 			children = (
-				75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */,
-				75D12B651ED73B31002ED39C /* Info.plist */,
+				75D12B951ED745A9002ED39C /* Extensions */,
+				75D12B9A1ED745F8002ED39C /* Objects */,
+				75D12BA41ED749DB002ED39C /* Protocols */,
+				75D12B7B1ED73B44002ED39C /* Supporting Files */,
 			);
 			path = KeyedAPIParameters;
 			sourceTree = "<group>";
@@ -80,10 +194,60 @@
 		75D12B6E1ED73B31002ED39C /* KeyedAPIParametersTests */ = {
 			isa = PBXGroup;
 			children = (
-				75D12B6F1ED73B31002ED39C /* KeyedAPIParametersTests.swift */,
-				75D12B711ED73B31002ED39C /* Info.plist */,
+				751CE9B51EE1BEFE00CA8327 /* Protocols */,
+				751CE9B41EE1BEF500CA8327 /* Objects */,
+				751CE9B31EE1BEF000CA8327 /* Extensions */,
+				751CE9B21EE1BE4800CA8327 /* Supporting Files */,
 			);
 			path = KeyedAPIParametersTests;
+			sourceTree = "<group>";
+		};
+		75D12B7B1ED73B44002ED39C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D12B651ED73B31002ED39C /* Info.plist */,
+				75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75D12B951ED745A9002ED39C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75D12B981ED745DD002ED39C /* Date.swift */,
+				75D12B961ED745BB002ED39C /* Dictionary.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75D12B9A1ED745F8002ED39C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				75D12BA71ED74C9B002ED39C /* APIParamValue.swift */,
+				75D12BA21ED749C1002ED39C /* HTTPMethod.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		75D12BA41ED749DB002ED39C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75D12BA51ED749ED002ED39C /* APIParamConvertible.swift */,
+				75D12BA91ED74CBD002ED39C /* APIParameters.swift */,
+				75D12BAD1ED74D24002ED39C /* KeyedAPIParameters.swift */,
+				75D12BAB1ED74CE1002ED39C /* ParamJSONKey.swift */,
+				75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DD81D3A004E48C85B294EFC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				966464BFBB827BC22659222A /* libPods-KeyedAPIParameters.a */,
+				422D0A32EE9ADD044501C655 /* Pods_KeyedAPIParametersTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D12B751ED73B31002ED39C /* Build configuration list for PBXNativeTarget "KeyedAPIParameters" */;
 			buildPhases = (
+				E311DD5AC74B0139606A1ED6 /* [CP] Check Pods Manifest.lock */,
 				75D12B5C1ED73B31002ED39C /* Sources */,
 				75D12B5D1ED73B31002ED39C /* Frameworks */,
 				75D12B5E1ED73B31002ED39C /* Headers */,
 				75D12B5F1ED73B31002ED39C /* Resources */,
+				EEB056CA122082504E5BCFB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D12B781ED73B31002ED39C /* Build configuration list for PBXNativeTarget "KeyedAPIParametersTests" */;
 			buildPhases = (
+				C9279BB2B45D099E4871DF60 /* [CP] Check Pods Manifest.lock */,
 				75D12B661ED73B31002ED39C /* Sources */,
 				75D12B671ED73B31002ED39C /* Frameworks */,
 				75D12B681ED73B31002ED39C /* Resources */,
+				5438A14CD47E464409180217 /* [CP] Embed Pods Frameworks */,
+				2205BDB767F274563C22B8A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +323,7 @@
 					75D12B691ED73B31002ED39C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5FU3YAJNJH;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,6 +351,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D12B931ED73FA5002ED39C /* Podfile in Resources */,
+				75D12B921ED73FA5002ED39C /* Gemfile.lock in Resources */,
+				75D12B911ED73FA5002ED39C /* Gemfile in Resources */,
+				75D12B8E1ED73FA5002ED39C /* .codebeatignore in Resources */,
+				75D12B8B1ED73FA5002ED39C /* .travis.yml in Resources */,
+				75D12B8C1ED73FA5002ED39C /* .gitignore in Resources */,
+				75D12B941ED73FA5002ED39C /* Podfile.lock in Resources */,
+				75D12B8D1ED73FA5002ED39C /* LICENSE in Resources */,
+				75D12B8F1ED73FA5002ED39C /* .swift-version in Resources */,
+				75D12B901ED73FA5002ED39C /* codecov.yml in Resources */,
+				75D12B8A1ED73FA5002ED39C /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,11 +374,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2205BDB767F274563C22B8A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyedAPIParametersTests/Pods-KeyedAPIParametersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5438A14CD47E464409180217 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyedAPIParametersTests/Pods-KeyedAPIParametersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9279BB2B45D099E4871DF60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E311DD5AC74B0139606A1ED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB056CA122082504E5BCFB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyedAPIParameters/Pods-KeyedAPIParameters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75D12B5C1ED73B31002ED39C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D12B991ED745DD002ED39C /* Date.swift in Sources */,
+				75D12BA31ED749C1002ED39C /* HTTPMethod.swift in Sources */,
+				75D12BA81ED74C9B002ED39C /* APIParamValue.swift in Sources */,
+				75D12BA61ED749ED002ED39C /* APIParamConvertible.swift in Sources */,
+				75D12BAE1ED74D24002ED39C /* KeyedAPIParameters.swift in Sources */,
+				75D12B971ED745BB002ED39C /* Dictionary.swift in Sources */,
+				75CC0BF51EFD5B9B00355C66 /* NSNumberParamConvertible.swift in Sources */,
+				75D12BAA1ED74CBD002ED39C /* APIParameters.swift in Sources */,
+				75D12BAC1ED74CE1002ED39C /* ParamJSONKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +473,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D12B701ED73B31002ED39C /* KeyedAPIParametersTests.swift in Sources */,
+				755361EF1EE71E5F00050FB5 /* DictionarySpec.swift in Sources */,
+				751CE9B71EE220DC00CA8327 /* DateSpec.swift in Sources */,
+				755361F11EE71EC700050FB5 /* APIParamConvertibleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +593,7 @@
 		};
 		75D12B761ED73B31002ED39C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C817B86FF103C6B99261FA /* Pods-KeyedAPIParameters.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -330,7 +601,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KeyedAPIParameters/Info.plist;
+				INFOPLIST_FILE = "KeyedAPIParameters/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.KeyedAPIParameters;
@@ -342,6 +613,7 @@
 		};
 		75D12B771ED73B31002ED39C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A555FE5BC21B5CDBC915317E /* Pods-KeyedAPIParameters.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -349,7 +621,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KeyedAPIParameters/Info.plist;
+				INFOPLIST_FILE = "KeyedAPIParameters/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.KeyedAPIParameters;
@@ -361,21 +633,26 @@
 		};
 		75D12B791ED73B31002ED39C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA80ADD903ECDBD2EDCB2438 /* Pods-KeyedAPIParametersTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FU3YAJNJH;
-				INFOPLIST_FILE = KeyedAPIParametersTests/Info.plist;
+				INFOPLIST_FILE = "KeyedAPIParametersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.KeyedAPIParametersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		75D12B7A1ED73B31002ED39C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23058028205E5F99B012312D /* Pods-KeyedAPIParametersTests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FU3YAJNJH;
-				INFOPLIST_FILE = KeyedAPIParametersTests/Info.plist;
+				INFOPLIST_FILE = "KeyedAPIParametersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.KeyedAPIParametersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,6 +679,7 @@
 				75D12B771ED73B31002ED39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75D12B781ED73B31002ED39C /* Build configuration list for PBXNativeTarget "KeyedAPIParametersTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +688,7 @@
 				75D12B7A1ED73B31002ED39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

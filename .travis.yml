@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode8.3
+rvm:
+    - 2.3.0
+cache:
+    - bundler
+    - cocoapods
+
+script:
+    - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme KeyedAPIParameters -workspace KeyedAPIParameters.xcworkspace -sdk iphonesimulator -destination "name=iPhone 5s" | xcpretty
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -J 'KeyedAPIParameters'
