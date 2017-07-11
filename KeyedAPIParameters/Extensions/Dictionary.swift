@@ -9,14 +9,10 @@ public extension Dictionary {
         return mapped
     }
     
-    public func mapFilterValues <V> (_ map: (Value) -> V?) -> [Key: V] {
+    public func mapValues <V> (_ map: (Value) throws -> V) rethrows -> [Key: V] {
         var mapped = [Key: V]()
         
-        forEach {
-            if let value = map($1) {
-                mapped[$0] = value
-            }
-        }
+        try forEach { mapped[$0] = try map($1) }
         
         return mapped
     }

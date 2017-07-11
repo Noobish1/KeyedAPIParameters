@@ -3,7 +3,7 @@ import Nimble
 @testable import KeyedAPIParameters
 
 fileprivate struct ConvertibleThing: APIParamConvertible {
-    fileprivate func value(forHTTPMethod method: HTTPMethod) -> Any? {
+    fileprivate func value(forHTTPMethod method: HTTPMethod) -> Any {
         return "expectedResult"
     }
 }
@@ -32,22 +32,6 @@ internal final class APIParamValueSpec: QuickSpec {
                         }
                     }
                     
-                    context("convertibleArray") {
-                        var expected: [String]!
-                        var actual: [String]!
-                        
-                        beforeEach {
-                            let convertibleThing = ConvertibleThing()
-                            value = .convertibleArray([convertibleThing])
-                            expected = [convertibleThing.value(forHTTPMethod: .get) as! String]
-                            actual = value.value(forHTTPMethod: .get) as! [String]
-                        }
-                        
-                        it("should return an array of the results the object's valueForHTTPMethod functions") {
-                            expect(actual) == expected
-                        }
-                    }
-                    
                     context("null") {
                         var actual: NSNull!
                         
@@ -56,7 +40,7 @@ internal final class APIParamValueSpec: QuickSpec {
                             actual = value.value(forHTTPMethod: .get) as! NSNull
                         }
                         
-                        it("should return nil") {
+                        it("should return NSNull") {
                             expect(actual) == NSNull()
                         }
                     }

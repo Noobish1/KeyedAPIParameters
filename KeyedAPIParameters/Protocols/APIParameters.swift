@@ -6,10 +6,10 @@ public protocol APIParameters: APIParamConvertible {
 
 extension APIParameters {
     public func toDictionary(forHTTPMethod method: HTTPMethod) -> [String : Any] {
-        return toParamDictionary(forHTTPMethod: method).mapFilterValues { $0.value(forHTTPMethod: method) }
+        return toParamDictionary(forHTTPMethod: method).mapValues { $0.value(forHTTPMethod: method) }
     }
     
-    public func value(forHTTPMethod method: HTTPMethod) -> Any? {
+    public func value(forHTTPMethod method: HTTPMethod) -> Any {
         return toDictionary(forHTTPMethod: method)
     }
 }

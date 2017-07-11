@@ -16,11 +16,11 @@ class DictionarySpec: QuickSpec {
                 }
             }
             
-            describe("mapFilterValues") {
-                it("should map the values then filter out nil values") {
-                    let dict: [String : Int?] = ["one" : 1, "two": nil]
+            describe("mapValues") {
+                it("should map the values") {
+                    let dict: [String : Int] = ["one" : 1]
                     let expectedValues = [1]
-                    let actualValues = Array(dict.mapFilterValues { $0 }.values)
+                    let actualValues = Array(dict.mapValues { $0 }.values)
                     
                     expect(actualValues) == expectedValues
                 }
