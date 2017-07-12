@@ -8,7 +8,7 @@ fileprivate struct ParamThing {
 }
 
 extension ParamThing: APIParameters {
-    fileprivate func toParamDictionary(forHTTPMethod method: HTTPMethod) -> [String : APIParamValue] {
+    fileprivate func toParamDictionary() -> [String : APIParamValue] {
         return ["stringProperty" : .convertible(property)]
     }
 }

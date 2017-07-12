@@ -15,7 +15,8 @@
 		7560336A1F0E7A1300E01200 /* APIParamValueSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756033691F0E7A1300E01200 /* APIParamValueSpec.swift */; };
 		756C85A01F13BFAC00BB06CD /* APIParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C859F1F13BFAC00BB06CD /* APIParametersSpec.swift */; };
 		756C85A21F13DCBC00BB06CD /* ParamJSONKeySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C85A11F13DCBC00BB06CD /* ParamJSONKeySpec.swift */; };
-		75CC0BF51EFD5B9B00355C66 /* NSNumberParamConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */; };
+		75B036661F156D1500C2432B /* KeyedAPIParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B036651F156D1500C2432B /* KeyedAPIParametersSpec.swift */; };
+		75CC0BF51EFD5B9B00355C66 /* NumberParamConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC0BF41EFD5B9B00355C66 /* NumberParamConvertible.swift */; };
 		75D12B6B1ED73B31002ED39C /* KeyedAPIParameters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D12B611ED73B31002ED39C /* KeyedAPIParameters.framework */; };
 		75D12B721ED73B31002ED39C /* KeyedAPIParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D12B8A1ED73FA5002ED39C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B7E1ED73FA5002ED39C /* .swiftlint.yml */; };
@@ -53,13 +54,14 @@
 		23058028205E5F99B012312D /* Pods-KeyedAPIParametersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParametersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParametersTests/Pods-KeyedAPIParametersTests.release.xcconfig"; sourceTree = "<group>"; };
 		422D0A32EE9ADD044501C655 /* Pods_KeyedAPIParametersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyedAPIParametersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C817B86FF103C6B99261FA /* Pods-KeyedAPIParameters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyedAPIParameters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyedAPIParameters/Pods-KeyedAPIParameters.debug.xcconfig"; sourceTree = "<group>"; };
-		751CE9B61EE220DC00CA8327 /* DateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = Extensions/DateSpec.swift; sourceTree = "<group>"; };
-		755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionarySpec.swift; path = Extensions/DictionarySpec.swift; sourceTree = "<group>"; };
-		755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParamConvertibleSpec.swift; path = Protocols/APIParamConvertibleSpec.swift; sourceTree = "<group>"; };
-		756033691F0E7A1300E01200 /* APIParamValueSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParamValueSpec.swift; path = Objects/APIParamValueSpec.swift; sourceTree = "<group>"; };
-		756C859F1F13BFAC00BB06CD /* APIParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParametersSpec.swift; path = Protocols/APIParametersSpec.swift; sourceTree = "<group>"; };
-		756C85A11F13DCBC00BB06CD /* ParamJSONKeySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParamJSONKeySpec.swift; path = Protocols/ParamJSONKeySpec.swift; sourceTree = "<group>"; };
-		75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberParamConvertible.swift; sourceTree = "<group>"; };
+		751CE9B61EE220DC00CA8327 /* DateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = DateSpec.swift; sourceTree = "<group>"; };
+		755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionarySpec.swift; path = DictionarySpec.swift; sourceTree = "<group>"; };
+		755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParamConvertibleSpec.swift; path = APIParamConvertibleSpec.swift; sourceTree = "<group>"; };
+		756033691F0E7A1300E01200 /* APIParamValueSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParamValueSpec.swift; path = APIParamValueSpec.swift; sourceTree = "<group>"; };
+		756C859F1F13BFAC00BB06CD /* APIParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIParametersSpec.swift; path = APIParametersSpec.swift; sourceTree = "<group>"; };
+		756C85A11F13DCBC00BB06CD /* ParamJSONKeySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParamJSONKeySpec.swift; path = ParamJSONKeySpec.swift; sourceTree = "<group>"; };
+		75B036651F156D1500C2432B /* KeyedAPIParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyedAPIParametersSpec.swift; path = KeyedAPIParametersSpec.swift; sourceTree = "<group>"; };
+		75CC0BF41EFD5B9B00355C66 /* NumberParamConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberParamConvertible.swift; sourceTree = "<group>"; };
 		75D12B611ED73B31002ED39C /* KeyedAPIParameters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyedAPIParameters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D12B641ED73B31002ED39C /* KeyedAPIParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyedAPIParameters.h; sourceTree = "<group>"; };
 		75D12B651ED73B31002ED39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				755361EE1EE71E5F00050FB5 /* DictionarySpec.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		751CE9B41EE1BEF500CA8327 /* Objects */ = {
@@ -145,6 +148,7 @@
 				756033691F0E7A1300E01200 /* APIParamValueSpec.swift */,
 			);
 			name = Objects;
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		751CE9B51EE1BEFE00CA8327 /* Protocols */ = {
@@ -152,9 +156,11 @@
 			children = (
 				755361F01EE71EC700050FB5 /* APIParamConvertibleSpec.swift */,
 				756C859F1F13BFAC00BB06CD /* APIParametersSpec.swift */,
+				75B036651F156D1500C2432B /* KeyedAPIParametersSpec.swift */,
 				756C85A11F13DCBC00BB06CD /* ParamJSONKeySpec.swift */,
 			);
 			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		75D12B571ED73B31002ED39C = {
@@ -203,9 +209,9 @@
 		75D12B6E1ED73B31002ED39C /* KeyedAPIParametersTests */ = {
 			isa = PBXGroup;
 			children = (
-				751CE9B51EE1BEFE00CA8327 /* Protocols */,
-				751CE9B41EE1BEF500CA8327 /* Objects */,
 				751CE9B31EE1BEF000CA8327 /* Extensions */,
+				751CE9B41EE1BEF500CA8327 /* Objects */,
+				751CE9B51EE1BEFE00CA8327 /* Protocols */,
 				751CE9B21EE1BE4800CA8327 /* Supporting Files */,
 			);
 			path = KeyedAPIParametersTests;
@@ -244,8 +250,8 @@
 				75D12BA51ED749ED002ED39C /* APIParamConvertible.swift */,
 				75D12BA91ED74CBD002ED39C /* APIParameters.swift */,
 				75D12BAD1ED74D24002ED39C /* KeyedAPIParameters.swift */,
+				75CC0BF41EFD5B9B00355C66 /* NumberParamConvertible.swift */,
 				75D12BAB1ED74CE1002ED39C /* ParamJSONKey.swift */,
-				75CC0BF41EFD5B9B00355C66 /* NSNumberParamConvertible.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -472,7 +478,7 @@
 				75D12BA61ED749ED002ED39C /* APIParamConvertible.swift in Sources */,
 				75D12BAE1ED74D24002ED39C /* KeyedAPIParameters.swift in Sources */,
 				75D12B971ED745BB002ED39C /* Dictionary.swift in Sources */,
-				75CC0BF51EFD5B9B00355C66 /* NSNumberParamConvertible.swift in Sources */,
+				75CC0BF51EFD5B9B00355C66 /* NumberParamConvertible.swift in Sources */,
 				75D12BAA1ED74CBD002ED39C /* APIParameters.swift in Sources */,
 				75D12BAC1ED74CE1002ED39C /* ParamJSONKey.swift in Sources */,
 			);
@@ -483,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755361EF1EE71E5F00050FB5 /* DictionarySpec.swift in Sources */,
+				75B036661F156D1500C2432B /* KeyedAPIParametersSpec.swift in Sources */,
 				7560336A1F0E7A1300E01200 /* APIParamValueSpec.swift in Sources */,
 				756C85A21F13DCBC00BB06CD /* ParamJSONKeySpec.swift in Sources */,
 				756C85A01F13BFAC00BB06CD /* APIParametersSpec.swift in Sources */,

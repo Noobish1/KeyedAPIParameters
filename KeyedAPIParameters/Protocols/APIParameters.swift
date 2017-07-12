@@ -1,12 +1,12 @@
 import Foundation
 
 public protocol APIParameters: APIParamConvertible {
-    func toParamDictionary(forHTTPMethod method: HTTPMethod) -> [String : APIParamValue]
+    func toParamDictionary() -> [String : APIParamValue]
 }
 
 extension APIParameters {
     public func toDictionary(forHTTPMethod method: HTTPMethod) -> [String : Any] {
-        return toParamDictionary(forHTTPMethod: method).mapValues { $0.value(forHTTPMethod: method) }
+        return toParamDictionary().mapValues { $0.value(forHTTPMethod: method) }
     }
     
     public func value(forHTTPMethod method: HTTPMethod) -> Any {

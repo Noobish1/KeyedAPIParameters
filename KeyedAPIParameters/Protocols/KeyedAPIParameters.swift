@@ -7,7 +7,7 @@ public protocol KeyedAPIParameters: APIParameters {
 }
 
 extension KeyedAPIParameters {
-    public func toParamDictionary(forHTTPMethod method: HTTPMethod) -> [String : APIParamValue] {
+    public func toParamDictionary() -> [String : APIParamValue] {
         return toKeyedDictionary().mapKeys { $0.stringValue }
     }
 }
