@@ -3,7 +3,7 @@ platform :ios, '8.0'
 project 'KeyedAPIParameters'
 
 target 'KeyedAPIParameters' do
-    pod 'SwiftLint', '0.18.1', :configurations => 'Debug'
+    pod 'SwiftLint', '0.20.1', :configurations => 'Debug'
 end
 
 target 'KeyedAPIParametersTests' do

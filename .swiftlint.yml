@@ -13,6 +13,9 @@ opt_in_rules:
   - private_outlet
   - redundant_nil_coalescing
   - fatal_error_message
+  - explicit_top_level_acl
+  - implicit_return
+  - extension_access_modifier
 included:
   - KeyedAPIParameters
 # parameterized rules can be customized from this configuration file
@@ -39,11 +42,6 @@ type_name:
     warning: 50
     error: 60
 custom_rules:
-  extension_acls:
-    name: "Extension ACLs"
-    regex: '^extension \w+ \{.*?$'
-    message: "extensions should have ACLs when they are not for protocol conformance"
-    severity: error
   protocol_acls:
     name: "Protocol ACLs"
     regex: '^protocol'
