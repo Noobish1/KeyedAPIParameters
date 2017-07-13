@@ -1,5 +1,5 @@
 disabled_rules:
-  - variable_name
+  - identifier_name
 opt_in_rules:
   - force_unwrapping
   - attributes
