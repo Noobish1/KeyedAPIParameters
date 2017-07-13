@@ -8,6 +8,7 @@ cache:
 
 before_install:
     - bundle install
+    - bundle exec pod repo update
 
 script:
     - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme KeyedAPIParameters -workspace KeyedAPIParameters.xcworkspace -sdk iphonesimulator -destination "name=iPhone 5s" | xcpretty

@@ -16,6 +16,7 @@ opt_in_rules:
   - explicit_top_level_acl
   - implicit_return
   - extension_access_modifier
+  - empty_count
 included:
   - KeyedAPIParameters
 # parameterized rules can be customized from this configuration file
