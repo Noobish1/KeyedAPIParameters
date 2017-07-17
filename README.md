@@ -11,7 +11,7 @@ This framework is based around a few main components which I will outline below.
 
 APIParamConvertible is a protocol which defines an object that can safely be turned into a value for a given HTTP method. The reason we pass in the HTTP method is that different HTTP methods may require different output. For example GET requests require `String`s whereas POST requests can use anything can be encoded to JSON.
 
-```
+```swift
 public protocol APIParamConvertible {
     func value(forHTTPMethod method: HTTPMethod) -> Any
 }
@@ -23,7 +23,7 @@ By looking in `APIParamConvertible.swift` you can see the built-in convertible t
 
 APIParamValue is a wrapper for all the types that we allow in API parameters, more can be added over time, this is just a decent start.
 
-```
+```swift
 public enum APIParamValue: APIParamConvertible {
     case convertible(APIParamConvertible)
     case optionalConvertible(APIParamConvertible?)
@@ -37,14 +37,14 @@ public enum APIParamValue: APIParamConvertible {
 
 `APIParameters` is the first level of protocols which you can make your parameters conform to. The reason `APIParameters` exists is it lets you have `String` keys without having to make an enum, which some may prefer.
 
-```
+```swift
 public protocol APIParameters: APIParamConvertible {
     func toParamDictionary() -> [String : APIParamValue]
 }
 ```
 
 A basic example would be:
-```
+```swift
 import KeyedAPIParameters
 
 struct Object {
@@ -62,7 +62,7 @@ extension Object: APIParameters {
 
 `KeyedAPIParameters` is the highest level of protocols you can make your parameters conform to. The protocol forces you to define an enum for the parameter keys.
 
-```
+```swift
 public protocol KeyedAPIParameters: APIParameters {
     associatedtype Key: ParamJSONKey
     
@@ -71,7 +71,7 @@ public protocol KeyedAPIParameters: APIParameters {
 ```
 
 A basic example would be:
-```
+```swift
 import KeyedAPIParameters
 
 struct Object {
@@ -91,7 +91,7 @@ extension Object: KeyedAPIParameters {
 
 ## Full example
 
-```
+```swift
 import KeyedAPIParameters
 
 struct InnerObject {
