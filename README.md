@@ -13,7 +13,7 @@ A concept for API parameters in Swift.
 This framework is based around a few main components which I will outline below.
 
 <details>
-<summary>APIParamConvertible<Summary>
+<summary>APIParamConvertible</summary>
 ## APIParamConvertible
 
 APIParamConvertible is a protocol which defines an object that can safely be turned into a value for a given HTTP method. The reason we pass in the HTTP method is that different HTTP methods may require different output. For example GET requests require `String`s whereas POST requests can use anything can be encoded to JSON.
@@ -23,9 +23,9 @@ public protocol APIParamConvertible {
     func value(forHTTPMethod method: HTTPMethod) -> Any
 }
 ```
-</details>
 
 By looking in `APIParamConvertible.swift` you can see the built-in convertible types.
+</details>
 
 <details>
 <summary>APIParamValue</summary>
