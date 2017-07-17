@@ -14,7 +14,6 @@ This framework is based around a few main components which I will outline below.
 
 <details>
 <summary>APIParamConvertible</summary>
-## APIParamConvertible
 
 APIParamConvertible is a protocol which defines an object that can safely be turned into a value for a given HTTP method. The reason we pass in the HTTP method is that different HTTP methods may require different output. For example GET requests require `String`s whereas POST requests can use anything can be encoded to JSON.
 
@@ -29,7 +28,6 @@ By looking in `APIParamConvertible.swift` you can see the built-in convertible t
 
 <details>
 <summary>APIParamValue</summary>
-## APIParamValue
 
 APIParamValue is a wrapper for all the types that we allow in API parameters, more can be added over time, this is just a decent start.
 
@@ -46,7 +44,6 @@ public enum APIParamValue: APIParamConvertible {
 
 <details>
 <summary>APIParameters</summary>
-## APIParameters
 
 `APIParameters` is the first level of protocols which you can make your parameters conform to. The reason `APIParameters` exists is it lets you have `String` keys without having to make an enum, which some may prefer.
 
@@ -74,7 +71,6 @@ extension Object: APIParameters {
 
 <details>
 <summary>KeyedAPIParameters</summary>
-## KeyedAPIParameters
 
 `KeyedAPIParameters` is the highest level of protocols you can make your parameters conform to. The protocol forces you to define an enum for the parameter keys.
 
@@ -108,7 +104,6 @@ extension Object: KeyedAPIParameters {
 
 <details>
 <summary>Full example</summary>
-## Full example
 
 ```swift
 import KeyedAPIParameters
