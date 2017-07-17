@@ -70,54 +70,6 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                 context("Double") {
                     testNumberParamConvertible { faker.number.randomDouble() }
                 }
-                
-                context("Optional") {
-                    context("when the wrapped value is non-nil") {
-                        var actual: String!
-                        var expected: String!
-                        
-                        beforeEach {
-                            let nonOptionalString = faker.lorem.characters()
-                            let object: String? = nonOptionalString
-                            actual = object.value(forHTTPMethod: .get) as! String
-                            expected = nonOptionalString.value(forHTTPMethod: .get) as! String
-                        }
-                        
-                        it("should return the result of that value after valueForHTTPMethod called apon it") {
-                            expect(actual) == expected
-                        }
-                    }
-                    
-                    context("when the wrapped value is nil") {
-                        var object: String?
-                        var actual: NSNull!
-                        
-                        beforeEach {
-                            object = nil
-                            actual = object.value(forHTTPMethod: .get) as! NSNull
-                        }
-                        
-                        it("should return NSNull") {
-                            expect(actual) == NSNull()
-                        }
-                    }
-                }
-                
-                context("An Array of APIParamConvertible elements") {
-                    var actual: [String]!
-                    var expected: [String]!
-                    
-                    beforeEach {
-                        let element = faker.lorem.characters()
-                        let array = [element]
-                        actual = array.value(forHTTPMethod: .get) as! [String]
-                        expected = [element.value(forHTTPMethod: .get) as! String]
-                    }
-                    
-                    it("should return an array of the result of calling valueForHTTPMethod on each of the elements") {
-                        expect(actual) == expected
-                    }
-                }
             }
         }
     }

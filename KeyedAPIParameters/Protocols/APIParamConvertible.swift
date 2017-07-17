@@ -21,21 +21,6 @@ extension String: APIParamConvertible {
     }
 }
 
-extension Optional where Wrapped: APIParamConvertible {
-    public func value(forHTTPMethod method: HTTPMethod) -> Any {
-        switch self {
-            case .some(let value): return value.value(forHTTPMethod: method)
-            case .none: return NSNull()
-        }
-    }
-}
-
-extension Array where Element: APIParamConvertible {
-    public func value(forHTTPMethod method: HTTPMethod) -> Any {
-        return self.map { $0.value(forHTTPMethod: method) }
-    }
-}
-
 extension Int: APIParamConvertible {}
 extension Float: APIParamConvertible {}
 extension Double: APIParamConvertible {}
