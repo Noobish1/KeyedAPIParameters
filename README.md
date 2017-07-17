@@ -29,6 +29,7 @@ By looking in `APIParamConvertible.swift` you can see the built-in convertible t
 <details>
 <summary>APIParamValue</summary>
 
+
 APIParamValue is a wrapper for all the types that we allow in API parameters, more can be added over time, this is just a decent start.
 
 ```swift
@@ -44,6 +45,7 @@ public enum APIParamValue: APIParamConvertible {
 
 <details>
 <summary>APIParameters</summary>
+
 
 `APIParameters` is the first level of protocols which you can make your parameters conform to. The reason `APIParameters` exists is it lets you have `String` keys without having to make an enum, which some may prefer.
 
@@ -71,6 +73,7 @@ extension Object: APIParameters {
 
 <details>
 <summary>KeyedAPIParameters</summary>
+
 
 `KeyedAPIParameters` is the highest level of protocols you can make your parameters conform to. The protocol forces you to define an enum for the parameter keys.
 
@@ -104,6 +107,7 @@ extension Object: KeyedAPIParameters {
 
 <details>
 <summary>Full example</summary>
+
 
 ```swift
 import KeyedAPIParameters
