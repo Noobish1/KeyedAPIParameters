@@ -8,12 +8,4 @@ public extension Dictionary {
         
         return mapped
     }
-    
-    public func mapValues <V> (_ map: (Value) throws -> V) rethrows -> [Key: V] {
-        var mapped = [Key: V]()
-        
-        try forEach { mapped[$0] = try map($1) }
-        
-        return mapped
-    }
 }
