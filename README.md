@@ -12,6 +12,8 @@ A concept for API parameters in Swift.
 - Swift 4.1+
 - iOS 8+
 
+## Usage
+
 This framework is based around a few main components which I will outline below.
 
 <details>
