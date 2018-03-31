@@ -1,7 +1,7 @@
 import Foundation
 
 public protocol APIParameters: APIParamConvertible {
-    func toParamDictionary() -> [String : APIParamValue]
+    func toParamDictionary() -> [String : APIParamConvertible]
 }
 
 extension APIParameters {

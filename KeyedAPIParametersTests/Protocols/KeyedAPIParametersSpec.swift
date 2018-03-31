@@ -12,8 +12,8 @@ extension KeyedAPIParamsThing: KeyedAPIParameters {
         case property
     }
     
-    public func toKeyedDictionary() -> [Key : APIParamValue] {
-        return [.property : .convertible(property)]
+    public func toKeyedDictionary() -> [Key : APIParamConvertible] {
+        return [.property : property]
     }
 }
 

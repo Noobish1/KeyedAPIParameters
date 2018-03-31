@@ -70,6 +70,66 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                 context("Double") {
                     testNumberParamConvertible { faker.number.randomDouble() }
                 }
+                
+                context("optionalConvertible") {
+                    context("when the given value is nil") {
+                        var actual: NSNull!
+                        var object: String?
+                        
+                        beforeEach {
+                            object = nil
+                            actual = object.value(forHTTPMethod: .get) as! NSNull
+                        }
+                        
+                        it("should return NSNull") {
+                            expect(actual) == NSNull()
+                        }
+                    }
+                        
+                    context("when the given is not nil") {
+                        var expected: String!
+                        var actual: String!
+                        var object: String?
+                        
+                        beforeEach {
+                            expected = "expected"
+                            object = expected
+                            actual = object.value(forHTTPMethod: .get) as! String
+                        }
+                        
+                        it("should return the result of calling valueForHTTPMethod on that value") {
+                            expect(actual) == expected
+                        }
+                    }
+                }
+                
+                    context("arrayConvertible") {
+                        var actual: [String]!
+                        var expected: [String]!
+                        
+                        beforeEach {
+                            expected = ["expected"]
+                            actual = expected.value(forHTTPMethod: .get) as! [String]
+                        }
+                        
+                        it("should return an array of the results of calling valueForHTTPMethod on each of its elements") {
+                            expect(actual) == expected
+                        }
+                    }
+                
+                    context("null") {
+                        var actual: NSNull!
+                        var expected: NSNull!
+                        
+                        beforeEach {
+                            expected = NSNull()
+                            actual = expected.value(forHTTPMethod: .get) as! NSNull
+                        }
+                        
+                        it("should return NSNull") {
+                            expect(actual) == expected
+                        }
+                    }
             }
         }
     }
