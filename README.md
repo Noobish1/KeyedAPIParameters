@@ -6,8 +6,8 @@ A concept for API parameters in Swift.
 
 ## Requirements
  
-- Xcode 8+
-- Swift 3+
+- Xcode 9.3+
+- Swift 4.1+
 - iOS 8+
 
 This framework is based around a few main components which I will outline below.
@@ -15,7 +15,7 @@ This framework is based around a few main components which I will outline below.
 <details>
 <summary>APIParamConvertible</summary>
 
-APIParamConvertible is a protocol which defines an object that can safely be turned into a value for a given HTTP method. The reason we pass in the HTTP method is that different HTTP methods may require different output. For example GET requests require `String`s whereas POST requests can use anything can be encoded to JSON.
+APIParamConvertible is a protocol which defines an object that can safely be turned into a value for a given HTTP method. The reason we pass in the HTTP method is that different HTTP methods may require different output. For example GET requests require `String`s whereas POST requests can use anything that can be encoded to JSON.
 
 ```swift
 public protocol APIParamConvertible {
@@ -27,23 +27,6 @@ By looking in `APIParamConvertible.swift` you can see the built-in convertible t
 </details>
 
 <details>
-<summary>APIParamValue</summary>
-
-
-APIParamValue is a wrapper for all the types that we allow in API parameters, more can be added over time, this is just a decent start.
-
-```swift
-public enum APIParamValue: APIParamConvertible {
-    case convertible(APIParamConvertible)
-    case optionalConvertible(APIParamConvertible?)
-    case arrayConvertible([APIParamConvertible])
-    case null
-    case timestampInMillis(Date)
-}
-```
-</details>
-
-<details>
 <summary>APIParameters</summary>
 
 
@@ -51,7 +34,7 @@ public enum APIParamValue: APIParamConvertible {
 
 ```swift
 public protocol APIParameters: APIParamConvertible {
-    func toParamDictionary() -> [String : APIParamValue]
+    func toParamDictionary() -> [String : APIParamConvertible]
 }
 ```
 
@@ -64,8 +47,8 @@ struct Object {
 }
 
 extension Object: APIParameters {    
-    func toParamDictionary() -> [String : APIParamValue] {
-        return ["stringProperty" : .convertible(stringProperty)]
+    func toParamDictionary() -> [String : APIParamConvertible] {
+        return ["stringProperty" : stringProperty]
     }
 }
 ```
@@ -81,7 +64,7 @@ extension Object: APIParameters {
 public protocol KeyedAPIParameters: APIParameters {
     associatedtype Key: ParamJSONKey
     
-    func toKeyedDictionary() -> [Key: APIParamValue]
+    func toKeyedDictionary() -> [Key: APIParamConvertible]
 }
 ```
 
@@ -98,8 +81,8 @@ extension Object: KeyedAPIParameters {
         case stringProperty
     }
     
-    func toKeyedDictionary() -> [Key : APIParamValue] {
-        return [.stringProperty : .convertible(stringProperty)]
+    func toKeyedDictionary() -> [Key : APIParamConvertible] {
+        return [.stringProperty : stringProperty]
     }
 }
 ```
@@ -121,8 +104,8 @@ extension InnerObject: KeyedAPIParameters {
         case innerStringProperty
     }
     
-    func toKeyedDictionary() -> [Key : APIParamValue] {
-        return [.innerStringProperty : .convertible(innerStringProperty)]
+    func toKeyedDictionary() -> [Key : APIParamConvertible] {
+        return [.innerStringProperty : innerStringProperty]
     }
 }
 
@@ -149,16 +132,16 @@ extension Object: KeyedAPIParameters {
         case nestedProperty
     }
     
-    func toKeyedDictionary() -> [Key : APIParamValue] {
+    func toKeyedDictionary() -> [Key : APIParamConvertible] {
         return [
-            .stringProperty: .convertible(stringProperty),
-            .intProperty: .convertible(intProperty),
-            .floatProperty: .convertible(intProperty),
-            .doubleProperty: .convertible(doubleProperty),
-            .boolProperty: .convertible(boolProperty),
-            .optionalProperty: .optionalConvertible(optionalProperty),
-            .arrayProperty: .arrayConvertible(arrayProperty),
-            .nestedProperty: .convertible(nestedProperty)
+            .stringProperty: stringProperty,
+            .intProperty: intProperty,
+            .floatProperty: intProperty,
+            .doubleProperty: doubleProperty,
+            .boolProperty: boolProperty,
+            .optionalProperty: optionalProperty,
+            .arrayProperty: arrayProperty,
+            .nestedProperty: nestedProperty
         ]
     }
 }

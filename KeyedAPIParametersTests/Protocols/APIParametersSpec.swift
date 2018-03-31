@@ -8,8 +8,8 @@ fileprivate struct ParamThing {
 }
 
 extension ParamThing: APIParameters {
-    fileprivate func toParamDictionary() -> [String : APIParamValue] {
-        return ["stringProperty" : .convertible(property)]
+    fileprivate func toParamDictionary() -> [String : APIParamConvertible] {
+        return ["stringProperty" : property]
     }
 }
 
