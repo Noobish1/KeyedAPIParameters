@@ -21,7 +21,6 @@
 		75D12B8C1ED73FA5002ED39C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B801ED73FA5002ED39C /* .gitignore */; };
 		75D12B8D1ED73FA5002ED39C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B811ED73FA5002ED39C /* LICENSE */; };
 		75D12B8E1ED73FA5002ED39C /* .codebeatignore in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B821ED73FA5002ED39C /* .codebeatignore */; };
-		75D12B8F1ED73FA5002ED39C /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B831ED73FA5002ED39C /* .swift-version */; };
 		75D12B901ED73FA5002ED39C /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B841ED73FA5002ED39C /* codecov.yml */; };
 		75D12B911ED73FA5002ED39C /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B851ED73FA5002ED39C /* Gemfile */; };
 		75D12B921ED73FA5002ED39C /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 75D12B861ED73FA5002ED39C /* Gemfile.lock */; };
@@ -69,7 +68,6 @@
 		75D12B801ED73FA5002ED39C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		75D12B811ED73FA5002ED39C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		75D12B821ED73FA5002ED39C /* .codebeatignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
-		75D12B831ED73FA5002ED39C /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		75D12B841ED73FA5002ED39C /* codecov.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
 		75D12B851ED73FA5002ED39C /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		75D12B861ED73FA5002ED39C /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				75D12B621ED73B31002ED39C /* Products */,
 				75D12B821ED73FA5002ED39C /* .codebeatignore */,
 				75D12B801ED73FA5002ED39C /* .gitignore */,
-				75D12B831ED73FA5002ED39C /* .swift-version */,
 				75D12B7E1ED73FA5002ED39C /* .swiftlint.yml */,
 				75D12B7F1ED73FA5002ED39C /* .travis.yml */,
 				75D12B851ED73FA5002ED39C /* Gemfile */,
@@ -364,7 +361,6 @@
 				75D12B8C1ED73FA5002ED39C /* .gitignore in Resources */,
 				75D12B941ED73FA5002ED39C /* Podfile.lock in Resources */,
 				75D12B8D1ED73FA5002ED39C /* LICENSE in Resources */,
-				75D12B8F1ED73FA5002ED39C /* .swift-version in Resources */,
 				75D12B901ED73FA5002ED39C /* codecov.yml in Resources */,
 				75D12B8A1ED73FA5002ED39C /* .swiftlint.yml in Resources */,
 			);
