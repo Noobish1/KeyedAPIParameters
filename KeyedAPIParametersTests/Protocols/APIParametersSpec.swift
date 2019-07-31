@@ -25,7 +25,7 @@ internal final class APIParametersSpec: QuickSpec {
                 beforeEach {
                     let property = faker.lorem.characters()
                     let thing = ParamThing(property: property)
-                    actual = thing.toDictionary(forHTTPMethod: .get) as! [String : String]
+                    actual = thing.toDictionary(forHTTPMethod: .get) as? [String : String]
                     expected = ["stringProperty" : property]
                 }
                 
@@ -41,7 +41,7 @@ internal final class APIParametersSpec: QuickSpec {
                 beforeEach {
                     let property = faker.lorem.characters()
                     let thing = ParamThing(property: property)
-                    actual = thing.value(forHTTPMethod: .get) as! [String : String]
+                    actual = thing.value(forHTTPMethod: .get) as? [String : String]
                     expected = ["stringProperty" : property]
                 }
                 

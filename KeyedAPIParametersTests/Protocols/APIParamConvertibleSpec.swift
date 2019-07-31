@@ -78,7 +78,7 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                         
                         beforeEach {
                             object = nil
-                            actual = object.value(forHTTPMethod: .get) as! NSNull
+                            actual = object.value(forHTTPMethod: .get) as? NSNull
                         }
                         
                         it("should return NSNull") {
@@ -94,7 +94,7 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                         beforeEach {
                             expected = "expected"
                             object = expected
-                            actual = object.value(forHTTPMethod: .get) as! String
+                            actual = object.value(forHTTPMethod: .get) as? String
                         }
                         
                         it("should return the result of calling valueForHTTPMethod on that value") {
@@ -109,7 +109,7 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                         
                         beforeEach {
                             expected = ["expected"]
-                            actual = expected.value(forHTTPMethod: .get) as! [String]
+                            actual = expected.value(forHTTPMethod: .get) as? [String]
                         }
                         
                         it("should return an array of the results of calling valueForHTTPMethod on each of its elements") {
@@ -123,7 +123,7 @@ internal final class APIParamConvertibleSpec: QuickSpec {
                         
                         beforeEach {
                             expected = NSNull()
-                            actual = expected.value(forHTTPMethod: .get) as! NSNull
+                            actual = expected.value(forHTTPMethod: .get) as? NSNull
                         }
                         
                         it("should return NSNull") {

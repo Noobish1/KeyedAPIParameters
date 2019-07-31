@@ -1,21 +1,28 @@
 PODS:
-  - Fakery (3.3.0)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Fakery (4.1.1)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
-  - Fakery (= 3.3.0)
-  - Nimble (= 7.0.3)
-  - Quick (= 1.2.0)
+  - Fakery (= 4.1.1)
+  - Nimble (= 8.0.2)
+  - Quick (= 2.1.0)
   - SwiftLint (= 0.25.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Fakery
+    - Nimble
+    - Quick
+    - SwiftLint
+
 SPEC CHECKSUMS:
-  Fakery: 3aae11a87721c807c18c6456500d088c1230d3e5
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 423064e13e8e9eee891104da62afc466f6bde3ae
+PODFILE CHECKSUM: 339c92a069e595df5a42fcace0229115fe4ef0a1
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.5

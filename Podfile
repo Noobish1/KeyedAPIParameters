@@ -9,8 +9,8 @@ target 'KeyedAPIParameters' do
     target 'KeyedAPIParametersTests' do
         inherit! :search_paths
         
-        pod 'Quick', '1.2.0'
-        pod 'Nimble', '7.0.3'
-        pod 'Fakery', '3.3.0'
+        pod 'Quick', '2.1.0'
+        pod 'Nimble', '8.0.2'
+        pod 'Fakery', '4.1.1'
     end
 end
