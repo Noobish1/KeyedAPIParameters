@@ -1,7 +1,5 @@
 language: swift
 osx_image: xcode10.2
-rvm:
-    - 2.3.0
 cache:
     - bundler
     - cocoapods
