@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "KeyedAPIParameters"
-    s.version                   = "1.1.0"
+    s.version                   = "2.0.0"
     s.summary                   = "A concept for API parameters in Swift"
     s.homepage                  = "https://github.com/Noobish1/KeyedAPIParameters"
     s.license                   = "MIT"
