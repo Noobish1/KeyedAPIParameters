@@ -12,8 +12,10 @@ extension KeyedAPIParamsThing: KeyedAPIParameters {
         case property
     }
     
-    public func toKeyedDictionary() -> [Key : APIParamConvertible] {
-        return [.property : property]
+    public func param(for key: Key) -> APIParamConvertible {
+        switch key {
+            case .property: return property
+        }
     }
 }
 
@@ -23,10 +25,11 @@ internal final class KeyedAPIParametersSpec: QuickSpec {
             let faker = Faker()
             
             describe("it's toParamDictionary") {
-                it("should return of its conformers toKeyedDictionary function with the keys mapped to their string values") {
+                it("should return its conformers keys as strings mapped to their param values") {
                     let thing = KeyedAPIParamsThing(property: faker.lorem.characters())
                     
-                    let expected = thing.toKeyedDictionary().mapKeys { $0.stringValue }.mapValues { $0.value(forHTTPMethod: .get) }
+                    let keysAndValues = KeyedAPIParamsThing.Key.allCases.map { ($0, thing.param(for: $0)) }
+                    let expected = Dictionary(uniqueKeysWithValues: keysAndValues).mapKeys { $0.stringValue }
                     let actual = thing.toParamDictionary().mapValues { $0.value(forHTTPMethod: .get) }
                     
                     expect(actual as? [String : String]) == (expected as? [String : String])

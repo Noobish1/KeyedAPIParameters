@@ -10,8 +10,10 @@ extension InnerObject: KeyedAPIParameters {
         case innerStringProperty
     }
     
-    func toKeyedDictionary() -> [Key : APIParamConvertible] {
-        return [.innerStringProperty : innerStringProperty]
+    func param(for key: Key) -> APIParamConvertible {
+        switch key {
+            case .innerStringProperty: return innerStringProperty
+        }
     }
 }
 
@@ -38,16 +40,16 @@ extension Object: KeyedAPIParameters {
         case nestedProperty
     }
     
-    func toKeyedDictionary() -> [Key : APIParamConvertible] {
-        return [
-            .stringProperty: stringProperty,
-            .intProperty: intProperty,
-            .floatProperty: intProperty,
-            .doubleProperty: doubleProperty,
-            .boolProperty: boolProperty,
-            .optionalProperty: optionalProperty,
-            .arrayProperty: arrayProperty,
-            .nestedProperty: nestedProperty
-        ]
+    func param(for key: Key) -> APIParamConvertible {
+        switch key {
+            case .stringProperty: return stringProperty
+            case .intProperty: return intProperty
+            case .floatProperty: return intProperty
+            case .doubleProperty: return doubleProperty
+            case .boolProperty: return boolProperty
+            case .optionalProperty: return optionalProperty
+            case .arrayProperty: return arrayProperty
+            case .nestedProperty: return nestedProperty
+        }
     }
 }

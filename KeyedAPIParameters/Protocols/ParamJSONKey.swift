@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ParamJSONKey: RawRepresentable, Hashable {
+public protocol ParamJSONKey: RawRepresentable, Hashable, CaseIterable {
     var stringValue: String { get }
 }
 
